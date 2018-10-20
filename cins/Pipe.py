@@ -5,8 +5,7 @@ import pymongo
 
 class MongoDB(object):
     def __init__(self):
-        client = pymongo.MongoClient('182.150.37.55', 50070)
-        # client = pymongo.MongoClient('localhost',27017)
+        client = pymongo.MongoClient('localhost',27017)
 
         db = client['news']
         self.collection_zhengwen = db['content']
